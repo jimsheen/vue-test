@@ -1,0 +1,39 @@
+<div class="comment-list">
+    <div class="comment" v-for="(comment, index) in comments" :key="comment._id">
+        <!-- <div class="comment__meta">
+            <a class="comment__user" href="#">Jimbo</a>
+            <span class="comment__date">3 days ago</span>
+        </div> -->
+        <div class="comment__body">
+            <span>{{comment.content}}</span>
+        </div>
+        <!-- <div class="social-like">
+            <button class="btn social-like__btn">Like</button>
+            <span>You and 5 other people like this</span>
+        </div> -->
+        <comment v-for="reply in comment.replies" :reply="reply" :key="reply"></comment>
+        <form class="write-comment" @submit.prevent="addReply(comment.newReply, comment._id)" @keyup.enter="(comment.toggleEnterSend ? addReply(comment.newReply, comment._id) : null)">
+            <div class="write-comment__container">
+                <textarea placeholder="Write a reply " name="reply" v-model="comment.newReply"></textarea>
+            </div>
+            <input type="submit" class="btn btn--primary " value="SEND" />
+            <div>
+                <span class="small">Press enter to send?</span>
+                <input type="checkbox" v-model="comment.toggleEnterSend" checked="checked" />
+            </div>
+        </form>
+    </div>
+    <div class="title--middle ">
+        <h2>Write Your Own Review</h2>
+    </div>
+    <form class="write-comment" @submit.prevent="addComment(newComment)" @keyup.enter="(toggleEnterSend ? addComment(newComment) : null)">
+        <div class="write-comment__container ">
+            <textarea placeholder="Write a comment " v-model="newComment"></textarea>
+        </div>
+        <div>
+            <span class="small">Press enter to send?</span>
+            <input type="checkbox" v-model="toggleEnterSend" />
+        </div>
+        <input type="submit" class="btn btn--primary " value="SEND" />
+    </form>
+</div>

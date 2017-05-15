@@ -183,8 +183,7 @@ require('font-awesome/less/font-awesome.less');
  *
  * http://stylus-lang.com/
  */
-require('./assets/stylus/app.styl');
-
+// require('./assets/scss/main.scss');
 
 export default {
   router,

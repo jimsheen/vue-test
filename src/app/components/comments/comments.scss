@@ -1,0 +1,264 @@
+.write-comment:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/**
+*
+* Comments List 
+*
+*/
+
+.comment {
+    margin-bottom: 36px;
+}
+
+.comment__meta,
+.comment__body {
+    margin-bottom: 12px;
+}
+
+.comment__user {
+    color: #B61364;
+    font-weight: bold;
+}
+
+.comment__body span {
+    display: block;
+    background: #EDF1EE;
+    border-radius: 5px;
+    padding: 24px;
+    white-space: pre;
+}
+
+.comment--reply {
+    padding: 36px 0 36px 48px;
+}
+
+.comment--reply__body span {
+    padding: 24px 0;
+    background: none;
+}
+
+.write-comment {
+    margin-top: 24px;
+}
+
+.write-comment__container {
+    margin-bottom: 12px;
+}
+
+.write-comment .btn {
+    float: right;
+}
+
+@media (max-width: 480px) {
+    .write-comment .btn {
+        width: 100%;
+    }
+}
+
+.social-like {
+    margin-bottom: 12px;
+}
+
+.social-like span {
+    font-size: 0.8em;
+    margin-left: 12px;
+    display: inline-block;
+}
+
+.title--middle {
+    line-height: 0.5;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title--middle h1 {
+    display: inline-block;
+    position: relative;
+}
+
+.title--middle h1:before,
+.title--middle h1:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 1px solid black;
+    top: 7px;
+    width: 600px;
+}
+
+.title--middle h1:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title--middle h1:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.title--middle h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.title--middle h2:before,
+.title--middle h2:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 1px solid black;
+    top: 7px;
+    width: 600px;
+}
+
+.title--middle h2:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title--middle h2:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.title--middle h3 {
+    display: inline-block;
+    position: relative;
+}
+
+.title--middle h3:before,
+.title--middle h3:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 1px solid black;
+    top: 7px;
+    width: 600px;
+}
+
+.title--middle h3:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title--middle h3:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.title--middle h4 {
+    display: inline-block;
+    position: relative;
+}
+
+.title--middle h4:before,
+.title--middle h4:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 1px solid black;
+    top: 7px;
+    width: 600px;
+}
+
+.title--middle h4:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title--middle h4:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.title--middle h5 {
+    display: inline-block;
+    position: relative;
+}
+
+.title--middle h5:before,
+.title--middle h5:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 1px solid black;
+    top: 7px;
+    width: 600px;
+}
+
+.title--middle h5:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title--middle h5:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.title--middle h6 {
+    display: inline-block;
+    position: relative;
+}
+
+.title--middle h6:before,
+.title--middle h6:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 1px solid black;
+    top: 7px;
+    width: 600px;
+}
+
+.title--middle h6:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title--middle h6:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+@media (max-width: 39.9375em) {
+    .title--middle {
+        text-align: left;
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid black;
+    }
+    .title--middle h1:before,
+    .title--middle h1:after {
+        display: none;
+    }
+    .title--middle h2:before,
+    .title--middle h2:after {
+        display: none;
+    }
+    .title--middle h3:before,
+    .title--middle h3:after {
+        display: none;
+    }
+    .title--middle h4:before,
+    .title--middle h4:after {
+        display: none;
+    }
+    .title--middle h5:before,
+    .title--middle h5:after {
+        display: none;
+    }
+    .title--middle h6:before,
+    .title--middle h6:after {
+        display: none;
+    }
+}
+
+.comment-list {
+    margin-bottom: 24px;
+}

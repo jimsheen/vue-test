@@ -58,12 +58,28 @@ export default [
     meta: {
       guest: true,
     },
-  },
-  {
+  }, {
+    path: '/blog',
+    name: 'blog.index',
+    component: require('pages/blog/index/index.vue'),
+
+    // If the user needs to be a guest to view this page
+    meta: {
+      auth: true,
+    },
+  }, {
+    path: '/blog/:id',
+    name: 'blog.single',
+    component: require('pages/blogSingle/index/index.vue'),
+
+    // If the user needs to be a guest to view this page
+    meta: {
+      auth: true,
+    },
+  }, {
     path: '/',
     redirect: '/home',
-  },
-  {
+  }, {
     path: '/*',
     redirect: '/home',
   },
